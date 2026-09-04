@@ -1207,7 +1207,7 @@ Du kan eksempelvis bruge denne tabel:
 | `index.html`   |                 |                   |                     |
 | `news.html`    |                 |                   |                     |
 | `games.html`   |                 |                   |                     |
-| `contact.html` |                 |                   |                     |
+| `contact.html` |                 |               100 |                  96 |
 
 Skriv derefter kort:
 
