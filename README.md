@@ -1204,19 +1204,25 @@ Du kan eksempelvis bruge denne tabel:
 
 | Side           | Performance før | Performance efter | Accessibility efter |
 | -------------- | --------------: | ----------------: | ------------------: |
-| `index.html`   |                 |                   |                     |
-| `news.html`    |                 |                   |                     |
-| `games.html`   |                 |                   |                     |
-| `contact.html` |                 |               100 |                  96 |
+| `index.html`   |              75 |               100 |                  96 |
+| `news.html`    |              75 |               100 |                  96 |
+| `games.html`   |              75 |               100 |                  96 |
+| `contact.html` |              75 |               100 |                  96 |
 
 Skriv derefter kort:
 
 1. Hvilke ændringer gav den største performanceforbedring?
+   Optimering af billeder gav den største forbedring, især ved at reducere filstørrelser og bruge WebP. Lazy loading af billeder hjalp også.
 2. Hvilke accessibility-problemer fandt du?
+   Jeg fandt blandt andet manglende labels i formularer, problemer med farvekontrast og manglende/uhensigtsmæssig heading-struktur
 3. Hvilke problemer kunne Lighthouse finde?
+   Lighthouse kunne blandt andet finde manglende labels og problemer med kontrast, alt-tekster og heading-struktur.
 4. Hvilke problemer fandt WAVE?
+   WAVE fandt blandt andet fejl og advarsler omkring manglende alternative tekster, formularlabels og strukturen på siden.
 5. Hvilke problemer krævede HeadingsMap eller manuel kontrol?
+   HeadingsMap var især nyttigt til at kontrollere, om overskrifterne fulgte en logisk rækkefølge. Manuel kontrol var nødvendig for fx at vurdere, om labels, linktekster og indhold gav mening for brugeren.
 6. Hvad har du lært om sammenhængen mellem performance og accessibility?
+   Jeg har lært, at performance og accessibility hænger sammen, fordi en hurtig og teknisk optimeret hjemmeside også kan give en bedre brugeroplevelse. Samtidig kræver accessibility mere end automatiske tests, da nogle problemer skal vurderes manuelt ud fra brugerens perspektiv.
 
 ---
 
